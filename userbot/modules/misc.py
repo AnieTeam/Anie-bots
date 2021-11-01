@@ -146,16 +146,6 @@ async def randomise(e):
         await e.edit("**Query: **\n`" + e.text + "`\n**Output: **\n`" + r[index] + "`")
 
 
-@register(outgoing=True, pattern="^.alive$")
-async def alive(a):
-    reply_msg = f"**[Maximus](https://github.com/noobanon/Maximus)**\n"
-    reply_msg += f"`Status : Alive`\n"
-    reply_msg += f"`Made By ❤ Using` @TelethonUpdates\n"
-    photo = "https://telegra.ph/file/66cdc2a48c85419a03e93.jpg"
-    await a.delete()
-    await bot.send_file(a.chat.id, photo, caption=reply_msg)
-
-
 @register(outgoing=True, pattern="^.chatid$")
 async def chatidgetter(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
@@ -196,19 +186,19 @@ async def killdabot(e):
 @register(outgoing=True, pattern="^.support$")
 async def bot_support(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
-        await e.edit("Report bugs here: [Join](https://t.me/TheBotSupport)")
+        await e.edit("Report bugs here: [Join](https://t.me/Aniebotsupports)")
 
 
 @register(outgoing=True, pattern="^.repo$")
 async def repo_is_here(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
-        await e.edit(" **Take This Pro Repo** [REPO](https://github.com/noobanon/Maximus)")
+        await e.edit(" **Take This Pro Repo** [REPO](https://github.com/Anieteam/Anie-userbot)")
 
 
 @register(outgoing=True, pattern="^.supportchannel$")
 async def support_channel(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
-        await e.edit("https://t.me/TheBotSupports")
+        await e.edit("https://t.me/Aniebots")
 
 
 @register(outgoing=True, pattern="^.userid$")
@@ -296,19 +286,3 @@ async def botlogs(e):
         reply_to=e.id,
         caption="`Bot logs are here!`",
     )
-
-CMD_HELP.update(
-    {
-        "extra": """
-『 **Extra Tools** 』
-  `.paste`-> Create a paste on dogbin
-  `.get_dogbin_content` -> Get the content of a paste.
-  `.pastestats` -> Get stats of a paste.
-  `.repo` -> Get gihub repo link.
-  `.leavekek` ->> leave a chat
-  `.support` -> Link of support group.
-  `.supportchannel` -> Updates Channel.
-  """
-
-    }
-)
