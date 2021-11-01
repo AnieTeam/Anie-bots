@@ -54,12 +54,12 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
         builder = event.builder
         result = None
         query = event.text
-        if event.query.user_id == bot.uid and query == "@DevilUserBot":
+        if event.query.user_id == bot.uid and query == "@Aniebots":
             rev_text = query[::-1]
             veriler = button(0, sorted(CMD_HELP))
             result = await builder.article(
                 f"Hey! Only use .help please",
-                text=f"**Running DevilUserBot**\n\n__Number of plugins installed__ :`{len(CMD_HELP)}`\n**page:** 1/{veriler[0]}",
+                text=f"**Running Anie**\n\n__Number of plugins installed__ :`{len(CMD_HELP)}`\n**page:** 1/{veriler[0]}",
                 buttons=veriler[1],
                 link_preview=False,
             )
@@ -73,21 +73,21 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
             )
         else:
             result = builder.article(
-                "@DevilUserBot",
-                text="""**Hey! This is [Dévílẞø†.](https://t.me/DevilUserBot) \nYou can know more about me from the links given below 👇**""",
+                "@Aniebotsupports",
+                text="""**Hey! This is [Anieẞø†.](https://t.me/Aniebotsupports) \nYou can know more about me from the links given below 👇**""",
                 buttons=[
                     [
-                        custom.Button.url("🔥 CHANNEL 🔥", "https://t.me/DevilUserBot"),
+                        custom.Button.url("🔥 CHANNEL 🔥", "https://t.me/Aniebotsupports"),
                         custom.Button.url(
-                            "⚡ GROUP ⚡", "https://t.me/DevilUserBot"
+                            "⚡ GROUP ⚡", "https://t.me/Aniebotsupports"
                         ),
                     ],
                     [
                         custom.Button.url(
-                            "✨ REPO ✨", "https://github.com/lucifeermorningstar/Devil-User-Bot"),
+                            "✨ REPO ✨", "https://github.com/anieteam/Anie-userbot"),
                         custom.Button.url
                     (
-                            "🔰 TUTORIAL 🔰", "https://t.me/DevilUserBot"
+                            "🔰 TUTORIAL 🔰", "https://t.me/Aniebotsupports"
                     )
                     ],
                 ],
@@ -115,7 +115,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
     async def on_plug_in_callback_query_handler(event):
         if event.query.user_id == bot.uid:
             await event.edit(
-                "⚜️Dèvílẞø† Menu Provider Is now Closed⚜️\n\n      © Dèvílẞø† ™"
+                "⚜️Dèvílẞø† Menu Provider Is now Closed⚜️\n\n      © Anieẞø† ™"
             )
           
     @tgbot.on(
