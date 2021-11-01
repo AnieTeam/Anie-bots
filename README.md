@@ -1,9 +1,9 @@
-![Maximus](https://telegra.ph/file/66cdc2a48c85419a03e93.jpg)
+![Anie](https://telegra.ph/file/7944090b9aca51ef8f562.jpg)
 
 ---
-# Telegram-UserBot
+# Anie-UserBot
 
-<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/noobanon/Maximus"> <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy to Heroku" /></a></p>
+<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/Anieteam/Anie-userbot"> <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy to Heroku" /></a></p>
 
 
 
@@ -42,7 +42,7 @@ A modular telegram Python UserBot running on python3 Telethon Client with an sql
 
 ### Before you start:
 
-Clone this repo `git clone https://github.com/noobanon/Maximus`
+Clone this repo `git clone https://github.com/Anieteam/Anie-userbot`
 
 Pip install all the requirements, `pip3 install -r requirements.txt`
 
@@ -226,4 +226,4 @@ I would like to thank people who assisted me throughout this project:
 
 and many more people who aren't mentioned here.
 
-Found Bugs? Create an issue on the issue tracker, or post it in the [support group](https://t.me/TheBotSupport).
+Found Bugs? Create an issue on the issue tracker, or post it in the [support group](https://t.me/Aniebotsupports).
